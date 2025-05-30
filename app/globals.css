@@ -1,26 +1,25 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-manrope-regular, Arial, Helvetica, sans-serif);
+}
+
+.manrope-medium {
+  font-family: var(--font-manrope-medium, Arial, Helvetica, sans-serif);
+}
+
+.manrope-semibold {
+  font-family: var(--font-manrope-semibold, Arial, Helvetica, sans-serif);
+}
+
+.manrope-bold {
+  font-family: var(--font-manrope-bold, Arial, Helvetica, sans-serif);
+}
+
+.poppins-semibold {
+  font-family: var(--font-poppins-semibold, Arial, Helvetica, sans-serif);
+}
+
+.poppins-bold {
+  font-family: var(--font-poppins-bold, Arial, Helvetica, sans-serif);
 }
