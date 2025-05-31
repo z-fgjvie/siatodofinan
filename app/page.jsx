@@ -1,3 +1,4 @@
+import Banner from "@/components/banner";
 import Beneficios from "@/components/beneficios";
 import Confianza from "@/components/confianza";
 import Diferencia from "@/components/diferencia";
@@ -13,6 +14,7 @@ export default function Home() {
       <Beneficios />
       <Confianza />
       <Simulador />
+      <Banner />
     </>
   );
 }

@@ -22,7 +22,7 @@ export default function Simulador() {
 
   const STEP = 5000;
   const MIN = 5000;
-  const MAX = 150000;
+  const MAX = 250000;
 
   const handleChange = (e) => {
     setCantidad(+e.target.value);
@@ -60,7 +60,11 @@ export default function Simulador() {
           </h3>
 
           <div className="flex items-center justify-between gap-5 mb-5">
-            <button type="button" onClick={handlClickDisminuir}>
+            <button
+              type="button"
+              onClick={handlClickDisminuir}
+              className="cursor-pointer"
+            >
               <AiFillMinusCircle className="text-[#09ce89] text-4xl sm:text-[2.5625rem]" />
             </button>
             <input
@@ -72,7 +76,11 @@ export default function Simulador() {
               value={cantidad}
               onChange={handleChange}
             />
-            <button type="button" onClick={handleClickAumentar}>
+            <button
+              type="button"
+              onClick={handleClickAumentar}
+              className="cursor-pointer"
+            >
               <IoAddCircle className="text-[#09ce89] text-[2.4375rem] sm:text-[2.8110rem]" />
             </button>
           </div>

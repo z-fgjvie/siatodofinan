@@ -3,7 +3,7 @@ import React from "react";
 
 export default function PageInicioSesion() {
   return (
-    <div className="shadow-md px-5 py-10 rounded-md w-full max-w-[35rem] md:w-[25rem] -mt-36 md:-mt-0 bg-white">
+    <div className="shadow-md px-5 py-10 rounded-md w-full max-w-[35rem] md:w-[25rem] -mt-40 md:-mt-0 bg-white">
       <p className="text-xs text-center">Logo</p>
       <h2 className="text-center text-2xl poppins-semibold mb-7">
         Iniciar Sesión
