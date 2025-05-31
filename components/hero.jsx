@@ -25,7 +25,7 @@ export default function Hero() {
               <GoArrowUpRight className="text-xl" />
             </Link>
             <Link
-              href="/"
+              href="#simulador"
               className="bg-[#09ce89] text-white w-fit  flex items-center px-5 py-3 rounded-lg gap-2 mx-auto md:mx-0"
             >
               Simular préstamo

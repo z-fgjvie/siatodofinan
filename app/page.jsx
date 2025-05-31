@@ -3,6 +3,7 @@ import Confianza from "@/components/confianza";
 import Diferencia from "@/components/diferencia";
 import Header from "@/components/header";
 import Hero from "@/components/hero";
+import Simulador from "@/components/simulador";
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
       <Hero />
       <Beneficios />
       <Confianza />
-      <Diferencia />
+      <Simulador />
     </>
   );
 }
