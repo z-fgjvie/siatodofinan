@@ -49,7 +49,7 @@ export default function Simulador() {
       className="px-5 py-16 flex justify-center scroll-top"
       id="simulador"
     >
-      <div className="max-w-[75rem] mx-auto grid lg:grid-cols-2 gap-25">
+      <div className="max-w-[75rem] mx-auto grid lg:grid-cols-2 lg:gap-25">
         <div className="bg-white shadow-xl rounded-md px-7 py-9">
           <h2 className="text-2xl poppins-semibold text-[#283b42] mb-7 text-center">
             ¿Cuánto <span className="text-[#09ce89]">dinero</span> quieres

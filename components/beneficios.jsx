@@ -11,7 +11,7 @@ import CardBeneficios from "./card-beneficios";
 
 export default function Beneficios() {
   return (
-    <section className="px-5 py-18">
+    <section className="px-5 py-16">
       <div className="max-w-[75rem] mx-auto">
         <Heading
           titulo=" Beneficios que te ofrecemos"
