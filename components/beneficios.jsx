@@ -15,7 +15,7 @@ export default function Beneficios() {
       <div className="max-w-[75rem] mx-auto">
         <Heading
           titulo=" Beneficios que te ofrecemos"
-          descripcion="Te damos el impulso que tu negocio necesita, sin complicaciones."
+          descripcion="Te damos el impulso que tu y tu negocio necesitan, sin complicaciones."
         />
 
         <div className="grid md:grid-cols-2 gap-7 md:gap-16 items-center">
