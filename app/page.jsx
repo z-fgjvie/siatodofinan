@@ -2,6 +2,7 @@ import Banner from "@/components/banner";
 import Beneficios from "@/components/beneficios";
 import Confianza from "@/components/confianza";
 import Diferencia from "@/components/diferencia";
+import Footer from "@/components/footer";
 import Header from "@/components/header";
 import Hero from "@/components/hero";
 import ModalidadPrestamo from "@/components/modalidad-prestamo";
@@ -20,6 +21,7 @@ export default function Home() {
       <Simulador />
       <Banner />
       <Diferencia />
+      <Footer />
     </>
   );
 }

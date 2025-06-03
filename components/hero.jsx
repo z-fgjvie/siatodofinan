@@ -1,11 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { GoArrowUpRight } from "react-icons/go";
 
 export default function Hero() {
   return (
-    <section className="px-5 py-16 bg-[#ebf5f6] ">
+    <section className="px-5 pt-10 pb-16 bg-[#ebf5f6] ">
       <div className="max-w-[75rem] mx-auto grid md:grid-cols-2 gap-10 items-center relative">
         <div>
           <h1 className="text-[#051517] text-center md:text-left text-4xl md:text-[42px] leading-12 lg:leading-none lg:text-5xl poppins-semibold mb-6">
@@ -16,19 +15,18 @@ export default function Hero() {
             Financia tus proyectos con rapidez, sin papeleos complicados y con
             tecnología que entiende tu negocio.
           </p>
-          <div className="flex items-center gap-2  flex-wrap ">
+          <div className="flex flex-wrap items-center gap-3 justify-center">
             <Link
-              href="/"
-              className="bg-[#09ce89] text-white w-fit  flex items-center px-5 py-3 rounded-lg gap-2 mx-auto md:mx-0"
+              href="/acceso/iniciar-sesion"
+              className="bg-[#09ce89] text-white  manrope-medium  text-[0.9375rem]  px-5 py-2 rounded-lg  sm:hidden"
             >
-              Crédito PYME
-              <GoArrowUpRight className="text-xl" />
+              Iniciar sesión
             </Link>
             <Link
-              href="#simulador"
-              className="bg-[#09ce89] text-white w-fit  flex items-center px-5 py-3 rounded-lg gap-2 mx-auto md:mx-0"
+              href="/acceso/registro"
+              className="bg-[#09ce89] text-white manrope-medium text-[0.9375rem] px-5 py-2 rounded-lg sm:hidden "
             >
-              Crédito Personal
+              Registro
             </Link>
           </div>
         </div>
@@ -37,7 +35,7 @@ export default function Hero() {
           alt="imagen de una medalla"
           width="42"
           height="42"
-          className="absolute top-40 left-72 hidden lg:flex"
+          className="absolute top-45 left-74 hidden lg:flex"
         />
         <Image
           src="/imagen-hero.jpg"
