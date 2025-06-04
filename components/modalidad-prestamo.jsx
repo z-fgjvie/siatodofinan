@@ -22,7 +22,7 @@ export default function ModalidadPrestamo() {
             icono={FaBuilding}
             credito="Crédito PYME"
             btn="Crédito PYME"
-            ruta="/"
+            ruta="/credito-pyme"
           />
         </div>
       </div>
