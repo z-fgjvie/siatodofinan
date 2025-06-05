@@ -5,6 +5,7 @@ import MainPyme from "./components/main-pyme";
 import FormularioSolicitud from "./components/formulario-solicitud";
 import Footer from "@/components/footer";
 import IniciosEstaticos from "@/components/inicios-staticos";
+import SimuladorPyme from "./components/simuladorPyme";
 
 export default function PageCreditoPyme() {
   return (
@@ -12,6 +13,7 @@ export default function PageCreditoPyme() {
       <Header />
       <HeroPyme />
       <MainPyme />
+      <SimuladorPyme />
       <FormularioSolicitud />
       <IniciosEstaticos />
       <Footer />
