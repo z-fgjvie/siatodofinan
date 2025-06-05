@@ -137,7 +137,7 @@ export default function Datos() {
 
         <button
           type="submit"
-          className="w-full block bg-[#09ce89] text-white rounded-md py-[0.655rem] mb-10 cursor-pointer"
+          className="w-full block bg-[#09ce89] text-white rounded-md py-[0.655rem] mb-10 cursor-pointer manrope-semibold"
         >
           Enviar
         </button>

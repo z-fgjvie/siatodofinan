@@ -15,20 +15,6 @@ export default function Hero() {
             Financia tus proyectos con rapidez, sin papeleos complicados y con
             tecnología que entiende tu negocio.
           </p>
-          <div className="flex flex-wrap items-center gap-3 justify-center">
-            <Link
-              href="/acceso/iniciar-sesion"
-              className="bg-[#09ce89] text-white  manrope-medium  text-[0.9375rem]  px-5 py-2 rounded-lg  sm:hidden"
-            >
-              Iniciar sesión
-            </Link>
-            <Link
-              href="/acceso/registro"
-              className="bg-[#09ce89] text-white manrope-medium text-[0.9375rem] px-5 py-2 rounded-lg sm:hidden "
-            >
-              Registro
-            </Link>
-          </div>
         </div>
         <Image
           src="/medal.png"

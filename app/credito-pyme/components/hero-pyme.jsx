@@ -9,11 +9,11 @@ export default function HeroPyme() {
           <h1 className="text-[#09ce89] text-center md:text-left text-4xl md:text-[42px] leading-12 lg:leading-none lg:text-5xl poppins-semibold mb-6">
             Créditos PyME
           </h1>
-          <p className="mb-6 md:text-lg">
+          <p className="mb-6 md:text-lg text-center md:text-left">
             Financiamiento empresarial de alto impacto, respaldado por Sí Te
             Presto y un consorcio de constructoras.
           </p>
-          <p className="md:text-lg bg-[#09ce89] px-5 py-4 rounded-md text-[#161b1d]">
+          <p className="md:text-lg bg-[#09ce89] px-5 py-4 rounded-md text-[#161b1d] text-center md:text-left">
             Lleva tu empresa al siguiente nivel con montos desde $1 millón hasta
             $200 millones de pesos, condiciones preferenciales y respaldo
             institucional.

@@ -1,10 +1,15 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import React from "react";
 
 export default function Header() {
+  const router = useRouter();
+
   return (
-    <header className="px-5 py-5 bg-[#ebf5f6]">
+    <header className="px-5 py-4  bg-[#ebf5f6] sm:sticky top-0 z-20">
       <div className="max-w-[75rem] mx-auto flex items-center justify-between">
         <div>
           <Image
@@ -12,6 +17,8 @@ export default function Header() {
             alt="logo si te presto"
             width="120"
             height="120"
+            onClick={() => router.push("/")}
+            className="cursor-pointer w-[6.875rem]  md:w-[7.5rem] "
           />
         </div>
 

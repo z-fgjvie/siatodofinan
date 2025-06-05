@@ -4,6 +4,7 @@ import HeroPyme from "./components/hero-pyme";
 import MainPyme from "./components/main-pyme";
 import FormularioSolicitud from "./components/formulario-solicitud";
 import Footer from "@/components/footer";
+import IniciosEstaticos from "@/components/inicios-staticos";
 
 export default function PageCreditoPyme() {
   return (
@@ -12,6 +13,7 @@ export default function PageCreditoPyme() {
       <HeroPyme />
       <MainPyme />
       <FormularioSolicitud />
+      <IniciosEstaticos />
       <Footer />
     </>
   );

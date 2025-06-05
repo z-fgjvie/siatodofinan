@@ -5,6 +5,8 @@ import React, { useEffect, useState } from "react";
 import { IoAddCircle } from "react-icons/io5";
 import { AiFillMinusCircle } from "react-icons/ai";
 import Image from "next/image";
+import Link from "next/link";
+import { FiArrowUpRight } from "react-icons/fi";
 
 export default function Simulador() {
   const [cantidad, setCantidad] = useState(35000);
@@ -120,6 +122,13 @@ export default function Simulador() {
               Mensuales
             </p>
           </div>
+          <Link
+            href="/acceso/registro"
+            className="w-full flex items-center gap-2 justify-center bg-[#09ce89] text-white rounded-md py-[0.655rem] mt-5 cursor-pointer manrope-semibold text-center"
+          >
+            Solicitar Crédito
+            <FiArrowUpRight className="text-[1.375rem]" />
+          </Link>
         </div>
 
         <div>
