@@ -7,6 +7,7 @@ import Link from "next/link";
 import { FiArrowUpRight } from "react-icons/fi";
 import { formatearDinero } from "@/lib/formatearDinero";
 
+// 💼 Definimos las tasas según el perfil de riesgo
 const perfiles = [
   {
     nombre: "Alta solidez (AAA)",
@@ -27,23 +28,26 @@ const perfiles = [
 ];
 
 export default function SimuladorPyme() {
-  const [cantidad, setCantidad] = useState(35000);
+  const [cantidad, setCantidad] = useState(1000000);
   const [meses, setMeses] = useState(6);
+  // 📊 Perfil de riesgo seleccionado
   const [perfil, setPerfil] = useState(perfiles[0]);
   const [totalPagar, setTotalPagar] = useState(0);
   const [mensuales, setMensuales] = useState(0);
 
   const STEP = 5000;
-  const MIN = 5000;
-  const MAX = 250000;
+  const MIN = 1000000;
+  const MAX = 200000000;
 
+  // 📌 Calculamos el total a pagar cada vez que cambian cantidad, meses o perfil
   useEffect(() => {
-    const tasa = perfil.tasaMensual;
-    const intereses = cantidad * tasa * meses;
-    const total = cantidad + intereses;
-    setTotalPagar(total);
+    const tasa = perfil.tasaMensual; // ejemplo: Alta solidez (AAA) = 0.015
+    const intereses = cantidad * tasa * meses; // interés total
+    const total = cantidad + intereses; // suma de capital + interés
+    setTotalPagar(total); // guardamos el total a pagar
   }, [cantidad, meses, perfil]);
 
+  // 📆 Calculamos el pago mensual dividiendo el total entre los meses
   useEffect(() => {
     setMensuales(totalPagar / meses);
   }, [totalPagar, meses]);
@@ -108,11 +112,16 @@ export default function SimuladorPyme() {
           </h3>
           <select
             className="mt-3 border w-full p-2 rounded-md border-gray-400 text-center text-[#283b42] font-bold outline-none"
-            value={perfil.nombre}
+            value={perfil.nombre} // 👈 aquí se muestra el nombre actual del perfil seleccionado
+            // 👇 Cuando el usuario selecciona otro perfil, este evento se ejecuta
             onChange={(e) => {
+              //find(...) recorre el array perfiles y devuelve el primer objeto que cumpla la condición:
+              // Buscamos en el array `perfiles` el objeto que tenga ese nombre
               const seleccionado = perfiles.find(
-                (p) => p.nombre === e.target.value
+                (p) => p.nombre === e.target.value // e.target.value es el valor del <option> que se eligió
               );
+
+              // Guardamos ese objeto completo en el estado `perfil`
               setPerfil(seleccionado);
             }}
           >
@@ -148,6 +157,10 @@ export default function SimuladorPyme() {
             <p className="text-[#283b42] manrope-medium my-2">
               Tasa mensual:{" "}
               <span className="text-gray-600">
+                {/* 
+                - El toFixed(1) es para agarrar solo un decimal , osea si la multiplicacion sale 1.50003 , solo sera   1.5
+                - Ahora la multiplicacion * 100 es para que se muestre con porcentaje como 1.5 , 2.0 cosas asi porque en el array como vez las tasaMensual esta como 0.015 , 0.02 
+                */}
                 {(perfil.tasaMensual * 100).toFixed(1)}%
               </span>
             </p>
