@@ -11,7 +11,7 @@ export default function IniciosEstaticos() {
         Iniciar sesión
       </Link>
       <Link
-        href="/acceso/registro"
+        href="/acceso/registro/personal"
         className="bg-[#09ce89] text-white manrope-medium text-[0.9375rem] px-6 py-3 rounded-md sm:hidden "
       >
         Registro

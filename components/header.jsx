@@ -30,7 +30,7 @@ export default function Header() {
             Iniciar sesión
           </Link>
           <Link
-            href="/acceso/registro"
+            href="/acceso/registro/personal"
             className="bg-[#09ce89] text-white manrope-medium text-[0.9375rem] px-5 py-2 rounded-lg hidden sm:flex"
           >
             Registro

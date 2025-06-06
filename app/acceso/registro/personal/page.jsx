@@ -2,9 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-export default function PageRegistro() {
+export default function PageRegistroPersonal() {
   return (
-    <div className="shadow-md px-5 py-10 rounded-md w-full max-w-[40rem] lg:w-[35rem] -mt-45 md:-mt-90 lg:-mt-0  bg-white ">
+    <div className="shadow-md px-5 py-10 rounded-md w-full max-w-[40rem] lg:w-[38rem] -mt-45 md:-mt-90 lg:-mt-0  bg-white ">
       <Image
         src="/logo-financiera-h.png"
         alt="logo si te presto"
@@ -16,6 +16,35 @@ export default function PageRegistro() {
 
       <form>
         <div className="grid md:grid-cols-2 md:gap-x-5">
+          <div className="mb-7">
+            <label
+              htmlFor="usuario"
+              className="text-[0.93rem] text-gray-600 mb-2 block"
+            >
+              Usuario
+            </label>
+            <input
+              type="text"
+              name="usuario"
+              id="usuario"
+              className="w-full outline-1 outline-gray-300 px-3 py-[0.625rem] rounded-md text-sm"
+            />
+          </div>
+          <div className="mb-7">
+            <label
+              htmlFor="password"
+              className="text-[0.93rem] text-gray-600 mb-2 block"
+            >
+              Contraseña
+            </label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              className="w-full outline-1 outline-gray-300 px-3 py-[0.625rem] rounded-md text-sm"
+            />
+          </div>
+
           <div className="mb-7">
             <label
               htmlFor="nombre"
@@ -31,7 +60,7 @@ export default function PageRegistro() {
             />
           </div>
 
-          <div className="mb-8">
+          <div className="mb-7">
             <label
               htmlFor="curp"
               className="text-[0.93rem] text-gray-600 mb-2 block"
@@ -46,7 +75,7 @@ export default function PageRegistro() {
             />
           </div>
 
-          <div className="mb-8">
+          <div className="mb-7">
             <label
               htmlFor="fecha"
               className="text-[0.93rem] text-gray-600 mb-2 block"
@@ -61,7 +90,7 @@ export default function PageRegistro() {
             />
           </div>
 
-          <div className="mb-8">
+          <div className="mb-7">
             <label
               htmlFor="estado"
               className="text-[0.93rem] text-gray-600 mb-2 block"
@@ -75,7 +104,7 @@ export default function PageRegistro() {
               className="w-full outline-1 outline-gray-300 px-3 py-[0.625rem] rounded-md text-sm"
             />
           </div>
-          <div className="mb-8">
+          <div className="mb-7">
             <label
               htmlFor="domicilio"
               className="text-[0.93rem] text-gray-600 mb-2 block"
@@ -89,7 +118,7 @@ export default function PageRegistro() {
               className="w-full outline-1 outline-gray-300 px-3 py-[0.625rem] rounded-md text-sm"
             />
           </div>
-          <div className="mb-8">
+          <div className="mb-7">
             <label
               htmlFor="telefono"
               className="text-[0.93rem] text-gray-600 mb-2 block"
@@ -103,7 +132,7 @@ export default function PageRegistro() {
               className="w-full outline-1 outline-gray-300 px-3 py-[0.625rem] rounded-md text-sm"
             />
           </div>
-          <div className="mb-8">
+          <div className="mb-7">
             <label
               htmlFor="correo"
               className="text-[0.93rem] text-gray-600 mb-2 block"
@@ -117,7 +146,7 @@ export default function PageRegistro() {
               className="w-full outline-1 outline-gray-300 px-3 py-[0.625rem] rounded-md text-sm"
             />
           </div>
-          <div className="mb-8">
+          <div className="mb-7">
             <label
               htmlFor="ocupacion"
               className="text-[0.93rem] text-gray-600 mb-2 block"
@@ -131,7 +160,7 @@ export default function PageRegistro() {
               className="w-full outline-1 outline-gray-300 px-3 py-[0.625rem] rounded-md text-sm"
             />
           </div>
-          <div className="mb-8">
+          <div className="mb-7">
             <label
               htmlFor="ingresos"
               className="text-[0.93rem] text-gray-600 mb-2 block"

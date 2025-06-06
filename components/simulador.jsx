@@ -99,6 +99,7 @@ export default function Simulador() {
             <option value="6">6 Meses</option>
             <option value="12">12 Meses</option>
             <option value="24">24 Meses</option>
+            <option value="48">48 Meses</option>
           </select>
 
           <div className="bg-gray-100  my-4 text-center py-3 rounded-md">
@@ -123,7 +124,7 @@ export default function Simulador() {
             </p>
           </div>
           <Link
-            href="/acceso/registro"
+            href="/acceso/registro/personal"
             className="w-full flex items-center gap-2 justify-center bg-[#09ce89] text-white rounded-md py-[0.655rem] mt-5 cursor-pointer manrope-semibold text-center"
           >
             Solicitar Crédito

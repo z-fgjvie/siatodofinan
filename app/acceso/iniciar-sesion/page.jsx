@@ -22,7 +22,7 @@ export default function PageInicioSesion() {
             htmlFor="usuario"
             className="text-[0.93rem] text-gray-600 mb-2 block"
           >
-            Usuario o correo electrónico
+            Usuario
           </label>
           <input
             type="text"

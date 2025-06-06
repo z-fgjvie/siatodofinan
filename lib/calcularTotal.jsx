@@ -15,8 +15,10 @@ export const calcularTotal = (cantidad, plazo) => {
     total *= 1.05;
   } else if (plazo === 12) {
     total *= 1.15;
-  } else {
+  } else if (plazo === 24) {
     total *= 1.25;
+  } else {
+    total *= 1.35;
   }
 
   return total;
