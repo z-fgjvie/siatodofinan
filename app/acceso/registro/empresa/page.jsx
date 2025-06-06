@@ -18,34 +18,6 @@ export default function PageRegistroEmpresa() {
         <div className="grid md:grid-cols-2 md:gap-x-5">
           <div className="mb-7">
             <label
-              htmlFor="usuario"
-              className="text-[0.93rem] text-gray-600 mb-2 block"
-            >
-              Usuario
-            </label>
-            <input
-              type="text"
-              name="usuario"
-              id="usuario"
-              className="w-full outline-1 outline-gray-300 px-3 py-[0.625rem] rounded-md text-sm"
-            />
-          </div>
-          <div className="mb-7">
-            <label
-              htmlFor="password"
-              className="text-[0.93rem] text-gray-600 mb-2 block"
-            >
-              Contraseña
-            </label>
-            <input
-              type="password"
-              name="password"
-              id="password"
-              className="w-full outline-1 outline-gray-300 px-3 py-[0.625rem] rounded-md text-sm"
-            />
-          </div>
-          <div className="mb-7">
-            <label
               htmlFor="representante"
               className="text-[0.93rem] text-gray-600 mb-2 block"
             >
@@ -55,6 +27,7 @@ export default function PageRegistroEmpresa() {
               type="text"
               name="representante"
               id="representante"
+              autoComplete="off"
               className="w-full outline-1 outline-gray-300 px-3 py-[0.625rem] rounded-md text-sm"
             />
           </div>
@@ -69,24 +42,25 @@ export default function PageRegistroEmpresa() {
               type="text"
               name="rfc"
               id="rfc"
+              autoComplete="off"
               className="w-full outline-1 outline-gray-300 px-3 py-[0.625rem] rounded-md text-sm"
             />
           </div>
           <div className="mb-7">
             <label
-              htmlFor="cel"
+              htmlFor="usuario"
               className="text-[0.93rem] text-gray-600 mb-2 block"
             >
-              Número de celular
+              Usuario
             </label>
             <input
-              type="tel"
-              name="cel"
-              id="cel"
+              type="text"
+              name="usuario"
+              id="usuario"
+              autoComplete="off"
               className="w-full outline-1 outline-gray-300 px-3 py-[0.625rem] rounded-md text-sm"
             />
           </div>
-
           <div className="mb-7">
             <label
               htmlFor="email"
@@ -98,137 +72,39 @@ export default function PageRegistroEmpresa() {
               type="email"
               name="email"
               id="email"
-              className="w-full outline-1 outline-gray-300 px-3 py-[0.625rem] rounded-md text-sm"
-            />
-          </div>
-          <div className="mb-7">
-            <label
-              htmlFor="antiguedad"
-              className="text-[0.93rem] text-gray-600 mb-2 block"
-            >
-              Antigüedad del negocio y giro
-            </label>
-            <input
-              type="text"
-              name="antiguedad"
-              id="antiguedad"
-              className="w-full outline-1 outline-gray-300 px-3 py-[0.625rem] rounded-md text-sm"
-            />
-          </div>
-          <div className="mb-7">
-            <label
-              htmlFor="monto"
-              className="text-[0.93rem] text-gray-600 mb-2 block"
-            >
-              Monto y plazo solicitado
-            </label>
-            <input
-              type="text"
-              name="monto"
-              id="monto"
-              className="w-full outline-1 outline-gray-300 px-3 py-[0.625rem] rounded-md text-sm"
-            />
-          </div>
-          <div className="mb-7">
-            <label
-              htmlFor="finalidad"
-              className="text-[0.93rem] text-gray-600 mb-2 block"
-            >
-              Finalidad del crédito
-            </label>
-            <input
-              type="text"
-              name="finalidad"
-              id="finalidad"
-              className="w-full outline-1 outline-gray-300 px-3 py-[0.625rem] rounded-md text-sm"
-            />
-          </div>
-          <div className="mb-7">
-            <label
-              htmlFor="ingresosma"
-              className="text-[0.93rem] text-gray-600 mb-2 block"
-            >
-              Ingresos mensuales/anuales
-            </label>
-            <input
-              type="text"
-              name="ingresosma"
-              id="ingresosma"
-              className="w-full outline-1 outline-gray-300 px-3 py-[0.625rem] rounded-md text-sm"
-            />
-          </div>
-          <div className="mb-7">
-            <label
-              htmlFor="garantias"
-              className="text-[0.93rem] text-gray-600 mb-2 block"
-            >
-              Garantías (si aplica)
-            </label>
-            <input
-              type="text"
-              name="garantias"
-              id="garantias"
+              autoComplete="off"
               className="w-full outline-1 outline-gray-300 px-3 py-[0.625rem] rounded-md text-sm"
             />
           </div>
 
           <div className="mb-7">
             <label
-              htmlFor="acta"
+              htmlFor="cel"
               className="text-[0.93rem] text-gray-600 mb-2 block"
             >
-              Acta constitutiva
+              Número de celular
             </label>
             <input
-              type="file"
-              name="acta"
-              id="acta"
-              accept=".pdf,.jpg,.png"
+              type="tel"
+              name="cel"
+              id="cel"
+              autoComplete="off"
               className="w-full outline-1 outline-gray-300 px-3 py-[0.625rem] rounded-md text-sm"
             />
           </div>
+
           <div className="mb-7">
             <label
-              htmlFor="identidicacion"
+              htmlFor="password"
               className="text-[0.93rem] text-gray-600 mb-2 block"
             >
-              Identificación oficial
+              Contraseña
             </label>
             <input
-              type="file"
-              name="identificacion"
-              id="identificacion"
-              accept=".pdf,.jpg,.png"
-              className="w-full outline-1 outline-gray-300 px-3 py-[0.625rem] rounded-md text-sm"
-            />
-          </div>
-          <div className="mb-7">
-            <label
-              htmlFor="sat"
-              className="text-[0.93rem] text-gray-600 mb-2 block"
-            >
-              Opinión del SAT positiva (32D)
-            </label>
-            <input
-              type="file"
-              name="sat"
-              id="sat"
-              accept=".pdf,.jpg,.png"
-              className="w-full outline-1 outline-gray-300 px-3 py-[0.625rem] rounded-md text-sm"
-            />
-          </div>
-          <div className="mb-7">
-            <label
-              htmlFor="estadocuenta"
-              className="text-[0.93rem] text-gray-600 mb-2 block"
-            >
-              Estados de cuenta (últimos 3 meses)
-            </label>
-            <input
-              type="file"
-              name="estadocuenta"
-              id="estadocuenta"
-              accept=".pdf,.jpg,.png"
+              type="password"
+              name="password"
+              id="password"
+              autoComplete="off"
               className="w-full outline-1 outline-gray-300 px-3 py-[0.625rem] rounded-md text-sm"
             />
           </div>

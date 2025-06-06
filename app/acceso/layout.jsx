@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
             />
           </div>
 
-          <section className="flex items-center justify-center px-3 sm:px-5 lg:px-0 pt-7 pb-14 lg:pb-12">
+          <section className="flex items-center justify-center px-4 sm:px-5 lg:px-0 pt-7 pb-14 lg:pb-12">
             {children}
           </section>
         </div>

@@ -25,6 +25,12 @@ const manropeBold = localFont({
   display: "swap",
 });
 
+const poppinsRegular = localFont({
+  src: "./fonts/Poppins-Regular.woff2",
+  variable: "--font-poppins-regular",
+  display: "swap",
+});
+
 const poppinsSemibold = localFont({
   src: "./fonts/Poppins-SemiBold.woff2",
   variable: "--font-poppins-semibold",
@@ -46,7 +52,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${manropeRegular.variable} ${manropeSemibold.variable} ${manropeBold.variable} ${poppinsSemibold.variable} ${poppinsBold.variable} ${manropeMedium.variable} antialiased`}
+        className={`${manropeRegular.variable} ${manropeSemibold.variable} ${manropeBold.variable} ${poppinsSemibold.variable} ${poppinsBold.variable} ${poppinsRegular.variable} ${manropeMedium.variable} antialiased`}
       >
         {children}
       </body>

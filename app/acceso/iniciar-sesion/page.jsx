@@ -43,6 +43,7 @@ export default function PageInicioSesion() {
             type="password"
             name="password"
             id="password"
+            autoComplete="off"
             className="w-full outline-1 outline-gray-300 px-3 py-[0.625rem] rounded-md text-sm"
           />
         </div>

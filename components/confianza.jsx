@@ -60,10 +60,11 @@ export default function Confianza() {
             </h3>
             <hr className="text-white my-3" />
             <p className="text-white">
-              En algunos casos, será necesario cubrir una cuota única de{" "}
-              <span className="manrope-semibold">$1,200 MXN</span> por estudio
-              socioeconómico. Esto nos ayuda a ofrecerte un crédito justo y sin
-              riesgos.
+              Será necesario cubrir una cuota única de{" "}
+              <strong>$1,200 MXN</strong> por estudio socioeconómico en{" "}
+              <strong>solicitudes personales</strong>. Para{" "}
+              <strong>solicitudes PYME</strong>, la cuota varía y se informa por
+              separado.
             </p>
           </div>
         </div>

@@ -23,6 +23,10 @@ body {
   font-family: var(--font-manrope-bold, Arial, Helvetica, sans-serif);
 }
 
+.poppins-regular {
+  font-family: var(--font-poppins-regular, Arial, Helvetica, sans-serif);
+}
+
 .poppins-semibold {
   font-family: var(--font-poppins-semibold, Arial, Helvetica, sans-serif);
 }
@@ -33,6 +37,10 @@ body {
 
 .scroll-top {
   scroll-margin-top: 4rem;
+}
+
+.shadow-s {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
 }
 
 @theme inline {
