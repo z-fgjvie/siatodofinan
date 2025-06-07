@@ -27,7 +27,7 @@ export default function PageRegistroEmpresa() {
       };
 
       const response = await fetch(
-        `${process.env.NEXT_PUBLIC_API_URL}/api/auth/registro`,
+        `https://api-financiera.onrender.com/api/auth/registro`,
         {
           method: "POST",
           headers: {
