@@ -1,4 +1,6 @@
 import localFont from "next/font/local";
+import { Toaster } from "@/components/ui/sonner";
+
 import "./globals.css";
 
 const manropeRegular = localFont({
@@ -55,6 +57,7 @@ export default function RootLayout({ children }) {
         className={`${manropeRegular.variable} ${manropeSemibold.variable} ${manropeBold.variable} ${poppinsSemibold.variable} ${poppinsBold.variable} ${poppinsRegular.variable} ${manropeMedium.variable} antialiased`}
       >
         {children}
+        <Toaster />
       </body>
     </html>
   );

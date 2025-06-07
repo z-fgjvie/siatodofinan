@@ -1,7 +1,35 @@
+"use client";
+import { formatearDinero } from "@/lib/formatearDinero";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 export default function SaldoCuenta() {
+  const [saldo, setSaldo] = useState(0);
+
+  useEffect(() => {
+    const obtenerSaldoCliente = async () => {
+      try {
+        const respuesta = await fetch(
+          `${process.env.NEXT_PUBLIC_API_URL}/api/auth/user`,
+          {
+            method: "GET",
+            credentials: "include",
+          }
+        );
+
+        const json = await respuesta.json();
+        console.log(json);
+        if (respuesta.ok) {
+          setSaldo(json.data.saldo);
+        }
+      } catch (error) {
+        console.log(error);
+      }
+    };
+
+    obtenerSaldoCliente();
+  }, []);
+
   return (
     <div className="row-start-1 row-end-2 lg:col-start-2 lg:col-end-3">
       <h2 className="text-2xl md:text-3xl  poppins-semibold text-[#09ce89] mb-3 lg:mb-7">
@@ -17,7 +45,7 @@ export default function SaldoCuenta() {
         </div>
         <div>
           <p className="manrope-medium text-gray-800 mb-1 sm:mb-2">
-            $1,000,000
+            {formatearDinero(saldo)}
           </p>
           <p className="text-gray-700 text-[0.6875rem] sm:text-sm">
             Saldo disponible

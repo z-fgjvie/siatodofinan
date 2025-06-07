@@ -13,7 +13,6 @@ export default function PageCreditoPyme() {
       <HeroPyme />
       <MainPyme />
       <SimuladorPyme />
-      <IniciosEstaticos />
       <Footer />
     </>
   );

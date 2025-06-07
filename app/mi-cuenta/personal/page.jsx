@@ -7,7 +7,7 @@ export default function PageMiCuentaPersonal() {
   return (
     <>
       <HeaderCuenta />
-      <HeroCuenta />
+      <HeroCuenta tipo="Cuenta Personal" />
       <MainCuenta />
     </>
   );
