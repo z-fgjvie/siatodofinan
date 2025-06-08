@@ -29,7 +29,6 @@ export default function PageInicioSesion() {
             "Content-Type": "application/json",
           },
           body: JSON.stringify(data),
-          credentials: "include",
         }
       );
 
@@ -41,6 +40,8 @@ export default function PageInicioSesion() {
         });
         return;
       }
+
+      localStorage.setItem("token", respuesta.data.access);
 
       toast("Inicio de sesión exitoso", {
         description: "Bienvenido a tu cuenta de Sí Te Presto.",
