@@ -47,13 +47,13 @@ export default function HeaderCuenta() {
         `${process.env.NEXT_PUBLIC_API_URL}/api/auth/cerrar`,
         {
           method: "POST",
-          credentials: "include",
         }
       );
 
       await response.json();
 
       if (response.ok) {
+        localStorage.removeItem("token"); // Borra el token local
         router.push("/");
       }
     } catch (error) {

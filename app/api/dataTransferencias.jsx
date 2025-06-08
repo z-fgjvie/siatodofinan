@@ -8,8 +8,13 @@ export const dataTransferencias = () => {
   useEffect(() => {
     (async () => {
       try {
+        const token = localStorage.getItem("token");
         const response = await fetch(url, {
-          credentials: "include",
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${token}`, // <-- aquí el token
+          },
         });
         const json = await response.json();
 
