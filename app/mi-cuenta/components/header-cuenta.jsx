@@ -24,8 +24,10 @@ export default function HeaderCuenta() {
           }
         );
 
+        console.log("Status:", respuesta.status);
         const json = await respuesta.json();
-        console.log(json);
+        console.log("JSON:", json);
+
         if (respuesta.ok) {
           const letraUsuario =
             json.data.nombreCompleto || json.data.representante || "Usuario";

@@ -9,11 +9,15 @@ export default function SaldoCuenta() {
   useEffect(() => {
     const obtenerSaldoCliente = async () => {
       try {
+        const token = localStorage.getItem("access");
         const respuesta = await fetch(
           `${process.env.NEXT_PUBLIC_API_URL}/api/auth/user`,
           {
             method: "GET",
-            credentials: "include",
+            headers: {
+              Authorization: `Bearer ${token}`, // 👈 lo pasas por header
+              "Content-Type": "application/json",
+            },
           }
         );
 
