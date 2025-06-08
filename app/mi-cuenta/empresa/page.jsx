@@ -7,11 +7,18 @@ import { useRouter } from "next/navigation";
 
 export default function PageMiCuentaEmpresa() {
   const router = useRouter();
-  const token = localStorage.getItem("access");
+  const [token, setToken] = useState(null);
 
-  if (!token) {
-    router.push("/iniciar-sesion");
-  }
+  useEffect(() => {
+    const storedToken = localStorage.getItem("access");
+    if (!storedToken) {
+      router.push("/iniciar-sesion");
+    } else {
+      setToken(storedToken);
+    }
+  }, [router]);
+
+  if (!token) return null; // Evita renderizar mientras no hay token
 
   return (
     <>
