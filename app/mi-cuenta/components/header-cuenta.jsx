@@ -11,11 +11,16 @@ export default function HeaderCuenta() {
   useEffect(() => {
     const obtenerLetraCliente = async () => {
       try {
+        const token = localStorage.getItem("token"); // 👈 obtienes el token
+        if (!token) return;
         const respuesta = await fetch(
           `${process.env.NEXT_PUBLIC_API_URL}/api/auth/user`,
           {
             method: "GET",
-            credentials: "include",
+            headers: {
+              Authorization: `Bearer ${token}`, // 👈 lo mandas en los headers
+              "Content-Type": "application/json",
+            },
           }
         );
 
