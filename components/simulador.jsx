@@ -9,7 +9,7 @@ import Link from "next/link";
 import { FiArrowUpRight } from "react-icons/fi";
 
 export default function Simulador() {
-  const [cantidad, setCantidad] = useState(35000);
+  const [cantidad, setCantidad] = useState(20000);
   const [meses, setMeses] = useState(6);
   const [totalPagar, setTotalPagar] = useState(0);
   const [mensuales, setMensuales] = useState(0);
@@ -23,7 +23,7 @@ export default function Simulador() {
   }, [totalPagar]);
 
   const STEP = 5000;
-  const MIN = 5000;
+  const MIN = 20000;
   const MAX = 250000;
 
   const handleChange = (e) => {
