@@ -25,7 +25,6 @@ export default function PageRegistroEmpresa() {
         ...data,
         tipoCliente: "empresa",
       };
-      console.log(process.env.NEXT_PUBLIC_API_URL);
       const response = await fetch(
         `${process.env.NEXT_PUBLIC_API_URL}/api/auth/registro`,
         {

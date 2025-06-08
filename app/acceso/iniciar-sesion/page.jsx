@@ -22,7 +22,7 @@ export default function PageInicioSesion() {
     setLoading(true);
     try {
       const response = await fetch(
-        `${process.env.NEXT_PUBLIC_API_URL}/api/auth/login`,
+        `https://api-financiera.onrender.com/api/auth/login`,
         {
           method: "POST",
           headers: {
