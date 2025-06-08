@@ -8,7 +8,7 @@ export default function HeroCuenta({ tipo }) {
   useEffect(() => {
     const obtenerDatosCliente = async () => {
       try {
-        const token = localStorage.getItem("access");
+        const token = localStorage.getItem("token");
         const respuesta = await fetch(
           `${process.env.NEXT_PUBLIC_API_URL}/api/auth/user`,
           {

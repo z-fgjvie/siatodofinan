@@ -9,7 +9,7 @@ export default function SaldoCuenta() {
   useEffect(() => {
     const obtenerSaldoCliente = async () => {
       try {
-        const token = localStorage.getItem("access");
+        const token = localStorage.getItem("token");
         const respuesta = await fetch(
           `${process.env.NEXT_PUBLIC_API_URL}/api/auth/user`,
           {

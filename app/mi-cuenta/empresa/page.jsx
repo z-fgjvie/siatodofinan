@@ -9,7 +9,7 @@ export default function PageMiCuentaEmpresa() {
   const router = useRouter();
 
   useEffect(() => {
-    const token = localStorage.getItem("access");
+    const token = localStorage.getItem("token");
 
     if (!token) {
       router.push("/");
