@@ -1,4 +1,5 @@
 "use client";
+import { getUser } from "@/lib/getUser";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
@@ -9,34 +10,14 @@ export default function HeaderCuenta() {
   const router = useRouter();
 
   useEffect(() => {
-    const obtenerLetraCliente = async () => {
-      try {
-        const token = localStorage.getItem("token"); // 👈 obtienes el token
-        if (!token) return;
-        const respuesta = await fetch(
-          `${process.env.NEXT_PUBLIC_API_URL}/api/auth/user`,
-          {
-            method: "GET",
-            headers: {
-              Authorization: `Bearer ${token}`, // 👈 lo mandas en los headers
-              "Content-Type": "application/json",
-            },
-          }
-        );
-
-        const json = await respuesta.json();
-
-        if (respuesta.ok) {
-          const letraUsuario =
-            json.data.nombreCompleto || json.data.representante || "Usuario";
-          setLetraUsuario(letraUsuario.charAt(0).toUpperCase());
-        }
-      } catch (error) {
-        console.log(error);
+    const cargarLetra = async () => {
+      const user = await getUser();
+      if (user) {
+        const nombre = user.nombreCompleto || user.representante || "Usuario";
+        setLetraUsuario(nombre.charAt(0).toUpperCase());
       }
     };
-
-    obtenerLetraCliente();
+    cargarLetra();
   }, []);
 
   const cerrarSesion = async () => {

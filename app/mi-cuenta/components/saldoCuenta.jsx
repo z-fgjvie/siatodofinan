@@ -1,5 +1,6 @@
 "use client";
 import { formatearDinero } from "@/lib/formatearDinero";
+import { getUser } from "@/lib/getUser";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
@@ -7,31 +8,11 @@ export default function SaldoCuenta() {
   const [saldo, setSaldo] = useState(0);
 
   useEffect(() => {
-    const obtenerSaldoCliente = async () => {
-      try {
-        const token = localStorage.getItem("token");
-        const respuesta = await fetch(
-          `${process.env.NEXT_PUBLIC_API_URL}/api/auth/user`,
-          {
-            method: "GET",
-            headers: {
-              Authorization: `Bearer ${token}`, // 👈 lo pasas por header
-              "Content-Type": "application/json",
-            },
-          }
-        );
-
-        const json = await respuesta.json();
-        console.log(json);
-        if (respuesta.ok) {
-          setSaldo(json.data.saldo);
-        }
-      } catch (error) {
-        console.log(error);
-      }
+    const cargarSaldo = async () => {
+      const user = await getUser();
+      if (user && user.saldo) setSaldo(user.saldo);
     };
-
-    obtenerSaldoCliente();
+    cargarSaldo();
   }, []);
 
   return (
