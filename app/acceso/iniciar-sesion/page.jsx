@@ -46,6 +46,7 @@ export default function PageInicioSesion() {
       toast("Inicio de sesión exitoso", {
         description: "Bienvenido a tu cuenta de Sí Te Presto.",
       });
+
       reset();
 
       if (respuesta.data.rol === "ADMIN") {
