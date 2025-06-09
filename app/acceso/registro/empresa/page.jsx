@@ -26,7 +26,7 @@ export default function PageRegistroEmpresa() {
         tipoCliente: "empresa",
       };
       const response = await fetch(
-        `${process.env.NEXT_PUBLIC_API_URL}/api/auth/registro`,
+        `${process.env.NEXT_PUBLIC_API_LOCAL}/api/auth/registro`,
         {
           method: "POST",
           headers: {
@@ -91,7 +91,7 @@ export default function PageRegistroEmpresa() {
               htmlFor="nombreEmpresa"
               className="text-[0.93rem] text-gray-600 mb-2 block"
             >
-              Nombre y RFC de la empresa
+              Nombre de la empresa
             </label>
             <input
               type="text"
@@ -99,6 +99,23 @@ export default function PageRegistroEmpresa() {
               id="nombreEmpresa"
               autoComplete="off"
               {...register("nombreEmpresa", { required: true, minLength: 4 })}
+              className="w-full outline-1 outline-gray-300 px-3 py-[0.625rem] rounded-md text-sm"
+            />
+          </div>
+          <div className="mb-7">
+            <label
+              htmlFor="nombreEmpresa"
+              className="text-[0.93rem] text-gray-600 mb-2 block"
+            >
+              RFC de la empresa
+            </label>
+            <input
+              type="text"
+              name="rfcEmpresa"
+              id="rfcEmpresa"
+              autoComplete="off"
+              maxLength={12}
+              {...register("rfcEmpresa", { required: true, minLength: 12 })}
               className="w-full outline-1 outline-gray-300 px-3 py-[0.625rem] rounded-md text-sm"
             />
           </div>

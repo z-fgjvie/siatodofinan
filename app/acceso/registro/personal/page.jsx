@@ -22,7 +22,7 @@ export default function PageRegistroPersonal() {
     setLoading(true);
     try {
       const response = await fetch(
-        `${process.env.NEXT_PUBLIC_API_URL}/api/auth/registro`,
+        `${process.env.NEXT_PUBLIC_API_LOCAL}/api/auth/registro`,
         {
           method: "POST",
           headers: {

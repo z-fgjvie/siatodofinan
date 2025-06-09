@@ -4,36 +4,36 @@ import { getUser } from "@/lib/getUser";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
-export default function SaldoCuenta() {
-  const [saldo, setSaldo] = useState(0);
+export default function SaldoPrestamos() {
+  const [credito, setCredito] = useState(0);
 
   useEffect(() => {
-    const cargarSaldo = async () => {
+    const cargarCredito = async () => {
       const user = await getUser();
-      if (user && user.cuentaAhorro) setSaldo(user.cuentaAhorro);
+      if (user && user.saldoPrestamo) setCredito(user.saldoPrestamo);
     };
-    cargarSaldo();
+    cargarCredito();
   }, []);
 
   return (
-    <div className="row-start-1 row-end-2 lg:col-start-2 lg:col-end-3">
+    <div className="mb-7">
       <h2 className="text-2xl md:text-3xl  poppins-semibold text-[#09ce89] mb-3 lg:mb-5">
-        Mi Saldo
+        Crédito Disponible
       </h2>
 
       <div className="shadow-s px-4 py-7 gap-6 rounded-md flex justify-between items-center">
         <div className="flex items-center gap-3">
           <Image src="/icon-financiera.png" alt="logo" width="30" height="30" />
           <p className="uppercase manrope-semibold text-gray-700 truncate md:overflow-visible md:text-ellipsis md:whitespace-normal">
-            Cuenta de ahorro
+            Saldo de crédito
           </p>
         </div>
         <div>
           <p className="manrope-medium text-gray-800 mb-1 sm:mb-2">
-            {formatearDinero(saldo)}
+            {formatearDinero(credito)}
           </p>
           <p className="text-gray-700 text-[0.6875rem] sm:text-sm">
-            Saldo disponible
+            Crédito disponible
           </p>
         </div>
       </div>

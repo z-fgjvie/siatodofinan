@@ -13,7 +13,7 @@ export default function HeaderCuenta() {
     const cargarLetra = async () => {
       const user = await getUser();
       if (user) {
-        const nombre = user.nombreCompleto || user.representante || "Usuario";
+        const nombre = user.nombreCompleto || user.nombreEmpresa || "Usuario";
         setLetraUsuario(nombre.charAt(0).toUpperCase());
       }
     };
@@ -23,7 +23,7 @@ export default function HeaderCuenta() {
   const cerrarSesion = async () => {
     try {
       const response = await fetch(
-        `${process.env.NEXT_PUBLIC_API_URL}/api/auth/cerrar`,
+        `${process.env.NEXT_PUBLIC_API_LOCAL}/api/auth/cerrar`,
         {
           method: "POST",
         }
