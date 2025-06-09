@@ -23,7 +23,7 @@ export default function HeaderCuenta() {
   const cerrarSesion = async () => {
     try {
       const response = await fetch(
-        `${process.env.NEXT_PUBLIC_API_LOCAL}/api/auth/cerrar`,
+        `${process.env.NEXT_PUBLIC_API_URL}/api/auth/cerrar`,
         {
           method: "POST",
         }

@@ -26,7 +26,7 @@ export default function PageRegistroEmpresa() {
         tipoCliente: "empresa",
       };
       const response = await fetch(
-        `${process.env.NEXT_PUBLIC_API_LOCAL}/api/auth/registro`,
+        `${process.env.NEXT_PUBLIC_API_URL}/api/auth/registro`,
         {
           method: "POST",
           headers: {
