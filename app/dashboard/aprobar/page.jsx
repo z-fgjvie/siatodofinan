@@ -19,7 +19,7 @@ export default function PageAprobar() {
     try {
       const token = localStorage.getItem("token");
       const response = await fetch(
-        `${process.env.NEXT_PUBLIC_API_LOCAL}/api/garantias/aprobar/${id}`,
+        `${process.env.NEXT_PUBLIC_API_URL}/api/garantias/aprobar/${id}`,
         {
           method: "PATCH",
           headers: {

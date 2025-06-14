@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 export const getUsuarios = () => {
   const [result, setResult] = useState(null);
   const [loading, setLoading] = useState(true);
-  const url = `${process.env.NEXT_PUBLIC_API_LOCAL}/api/auth/listar`;
+  const url = `${process.env.NEXT_PUBLIC_API_URL}/api/auth/listar`;
 
   useEffect(() => {
     (async () => {

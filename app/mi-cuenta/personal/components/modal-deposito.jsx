@@ -34,7 +34,7 @@ export default function ModalDeposito({ openModal, setOpenModal }) {
       const token = localStorage.getItem("token");
 
       const response = await fetch(
-        `${process.env.NEXT_PUBLIC_API_LOCAL}/api/socioeconomico/crear-socioeconomico`,
+        `${process.env.NEXT_PUBLIC_API_URL}/api/socioeconomico/crear-socioeconomico`,
         {
           method: "POST",
           headers: {
@@ -49,7 +49,7 @@ export default function ModalDeposito({ openModal, setOpenModal }) {
 
       if (response.ok) {
         await fetch(
-          `${process.env.NEXT_PUBLIC_API_LOCAL}/api/auth/update/${id}`,
+          `${process.env.NEXT_PUBLIC_API_URL}/api/auth/update/${id}`,
           {
             method: "PATCH", // o PATCH, depende de tu backend
             headers: {

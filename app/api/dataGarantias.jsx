@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 export const dataGarantias = () => {
   const [result, setResult] = useState(null);
   const [loading, setLoading] = useState(true);
-  const url = `${process.env.NEXT_PUBLIC_API_LOCAL}/api/garantias/listar`;
+  const url = `${process.env.NEXT_PUBLIC_API_URL}/api/garantias/listar`;
 
   useEffect(() => {
     (async () => {

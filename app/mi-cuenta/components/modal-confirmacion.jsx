@@ -50,7 +50,7 @@ export default function ModalConfirmacion({
       const token = localStorage.getItem("token");
 
       const response = await fetch(
-        `${process.env.NEXT_PUBLIC_API_LOCAL}/api/garantias/crear`,
+        `${process.env.NEXT_PUBLIC_API_URL}/api/garantias/crear`,
         {
           method: "POST",
           headers: {

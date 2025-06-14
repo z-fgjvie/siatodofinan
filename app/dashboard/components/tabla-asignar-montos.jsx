@@ -26,7 +26,7 @@ export default function TablaAsignarMonto() {
 
       // Llamamos al endpoint del backend para asignar el monto
       const res = await fetch(
-        `${process.env.NEXT_PUBLIC_API_LOCAL}/api/garantias/asignar-monto/${id}`,
+        `${process.env.NEXT_PUBLIC_API_URL}/api/garantias/asignar-monto/${id}`,
         {
           method: "PATCH", // 👈 IMPORTANTE: debe ser PATCH, no PUT o como este en el Backend
           headers: {
