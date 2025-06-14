@@ -28,8 +28,8 @@ export default function FooterApp() {
         </div>
 
         <Link href="/terminos-y-condiciones">Términos y Condiciones</Link>
-        <Link href="/">Aviso de Privacidad</Link>
-        <Link href="/">Aviso de Confidencialidad</Link>
+        <Link href="/aviso-de-privacidad">Aviso de Privacidad</Link>
+        <Link href="/aviso-de-confidencialidad">Aviso de Confidencialidad</Link>
       </div>
     </footer>
   );
