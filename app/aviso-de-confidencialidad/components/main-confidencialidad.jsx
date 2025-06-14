@@ -1,5 +1,7 @@
 import React from "react";
 import { FiArrowLeft } from "react-icons/fi";
+import { FaEnvelope, FaGlobe } from "react-icons/fa";
+import Link from "next/link";
 
 export default function MainConfidencialidad() {
   return (
