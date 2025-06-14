@@ -61,7 +61,7 @@ export const metadata = {
     siteName: "Sí a Todo",
     images: [
       {
-        url: "https://financiera-six.vercel.app/og-si.png",
+        url: "https://financiera-six.vercel.app/og-siatodo.png",
         width: 1200,
         height: 630,
       },

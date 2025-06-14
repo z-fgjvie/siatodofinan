@@ -15,7 +15,8 @@ export default function MainTerminos() {
         </Link>
         <ol className="list-decimal space-y-4 pl-5">
           <li>
-            El solicitante autoriza a <strong>Sí Te Presto</strong> a realizar
+            El solicitante autoriza a{" "}
+            <strong className="text-[#09ce89]">Sí Te Presto</strong> a realizar
             un estudio socioeconómico previo a la aprobación del crédito. En
             caso de no contar con historial crediticio o presentar historial
             negativo, dicho estudio será obligatorio y tendrá un costo de{" "}
@@ -44,7 +45,8 @@ export default function MainTerminos() {
                 <strong>Clave:</strong> 002540702027247851
               </li>
               <li>
-                <strong>Titular:</strong> Samantha Yuniel Barrios Degante
+                <strong>Representante Legal:</strong> Samantha Yuniel Barrios
+                Degante
               </li>
             </ul>
           </li>
