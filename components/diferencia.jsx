@@ -16,7 +16,7 @@ export default function Diferencia() {
           <div>
             <div className="bg-[#09ce89] flex justify-center  mx-auto w-[18.5rem] h-[18.5rem] md:w-[24rem] md:h-[24rem] lg:w-[25rem] lg:h-[25rem]  rounded-full overflow-hidden  relative">
               <Image
-                src="/diferencia.png"
+                src="https://res.cloudinary.com/dauhuy8u6/image/upload/f_auto,q_auto/v1749930490/diferencia_d35bjd.png"
                 alt="imagen de diferencia"
                 width="390"
                 height="390"

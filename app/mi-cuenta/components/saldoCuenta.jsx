@@ -23,7 +23,12 @@ export default function SaldoCuenta() {
 
       <div className="shadow-s px-4 py-7 gap-6 rounded-md flex justify-between items-center">
         <div className="flex items-center gap-3">
-          <Image src="/icon-financiera.png" alt="logo" width="30" height="30" />
+          <Image
+            src="https://res.cloudinary.com/dauhuy8u6/image/upload/f_auto,q_auto/v1749930495/icon-financiera_pqpbmr.png"
+            alt="logo"
+            width="30"
+            height="30"
+          />
           <p className="uppercase manrope-semibold text-gray-700 truncate md:overflow-visible md:text-ellipsis md:whitespace-normal">
             Cuenta de ahorro
           </p>

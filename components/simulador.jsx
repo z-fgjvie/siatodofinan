@@ -7,12 +7,20 @@ import { AiFillMinusCircle } from "react-icons/ai";
 import Image from "next/image";
 import Link from "next/link";
 import { FiArrowUpRight } from "react-icons/fi";
+import { simuladorPersonalStore } from "@/lib/simulador-personal-store";
 
 export default function Simulador() {
   const [cantidad, setCantidad] = useState(20000);
   const [meses, setMeses] = useState(6);
   const [totalPagar, setTotalPagar] = useState(0);
   const [mensuales, setMensuales] = useState(0);
+  const {
+    setMontoPersonal,
+    setTotalPagarPersonal,
+    setMesesPersonal,
+    setMontoMensualPersonal,
+    setVieneSimulador,
+  } = simuladorPersonalStore();
 
   useEffect(() => {
     setTotalPagar(calcularTotal(cantidad, meses));
@@ -36,6 +44,14 @@ export default function Simulador() {
     if (valor < MIN) return;
 
     setCantidad(valor);
+  };
+
+  const handleClickPrestamo = () => {
+    setMontoPersonal(cantidad);
+    setTotalPagarPersonal(totalPagar);
+    setMesesPersonal(meses);
+    setMontoMensualPersonal(mensuales);
+    setVieneSimulador(true);
   };
 
   const handleClickAumentar = () => {
@@ -125,6 +141,7 @@ export default function Simulador() {
           </div>
           <Link
             href="/acceso/registro/personal"
+            onClick={handleClickPrestamo}
             className="w-full flex items-center gap-2 justify-center bg-[#09ce89] text-white rounded-md py-[0.655rem] mt-5 cursor-pointer manrope-semibold text-center"
           >
             Solicitar Crédito
@@ -134,7 +151,7 @@ export default function Simulador() {
 
         <div>
           <Image
-            src="/simul.svg"
+            src="https://res.cloudinary.com/dauhuy8u6/image/upload/f_auto,q_auto/v1749930501/simul_x5ownl.svg"
             alt="logo"
             width="500"
             height="500"

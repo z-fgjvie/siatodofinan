@@ -20,7 +20,7 @@ export default function HeroPyme() {
           </p>
         </div>
         <Image
-          src="/pyme-imagen.webp"
+          src="https://res.cloudinary.com/dauhuy8u6/image/upload/f_auto,q_auto/v1749930500/pyme-imagen_xvfdr4.webp"
           alt="hero pyme"
           width="500"
           height="500"

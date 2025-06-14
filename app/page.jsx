@@ -2,7 +2,7 @@ import Banner from "@/components/banner";
 import Beneficios from "@/components/beneficios";
 import Confianza from "@/components/confianza";
 import Diferencia from "@/components/diferencia";
-import Footer from "@/components/footer";
+import FooterApp from "@/components/footerApp";
 import Header from "@/components/header";
 import Hero from "@/components/hero";
 import IniciosEstaticos from "@/components/inicios-staticos";
@@ -23,7 +23,7 @@ export default function Home() {
       <Banner />
       <Diferencia />
       <IniciosEstaticos />
-      <Footer />
+      <FooterApp />
     </>
   );
 }

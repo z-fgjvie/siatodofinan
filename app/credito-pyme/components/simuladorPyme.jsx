@@ -6,6 +6,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { FiArrowUpRight } from "react-icons/fi";
 import { formatearDinero } from "@/lib/formatearDinero";
+import { simuladorEmpresaStore } from "@/lib/simulador-empresa-store";
+import { set } from "react-hook-form";
 
 // 💼 Definimos las tasas según el perfil de riesgo
 const perfiles = [
@@ -34,6 +36,14 @@ export default function SimuladorPyme() {
   const [perfil, setPerfil] = useState(perfiles[0]);
   const [totalPagar, setTotalPagar] = useState(0);
   const [mensuales, setMensuales] = useState(0);
+  const {
+    setMontoEmpresa,
+    setTotalPagarEmpresa,
+    setMesesEmpresa,
+    setMontoMensualEmpresa,
+    setPerfilEmpresa,
+    setVieneSimuladorEmpresa,
+  } = simuladorEmpresaStore();
 
   const STEP = 5000;
   const MIN = 1000000;
@@ -53,6 +63,15 @@ export default function SimuladorPyme() {
   }, [totalPagar, meses]);
 
   const handleChange = (e) => setCantidad(+e.target.value);
+
+  const handleCLickEmpresa = () => {
+    setMontoEmpresa(cantidad);
+    setMesesEmpresa(meses);
+    setTotalPagarEmpresa(totalPagar);
+    setMontoMensualEmpresa(mensuales);
+    setPerfilEmpresa(perfil);
+    setVieneSimuladorEmpresa(true);
+  };
 
   const handlClickDisminuir = () => {
     const valor = cantidad - STEP;
@@ -186,6 +205,7 @@ export default function SimuladorPyme() {
           <Link
             href="/acceso/registro/empresa"
             className="w-full flex items-center gap-2 justify-center bg-[#09ce89] text-white rounded-md py-[0.655rem] mt-5 cursor-pointer manrope-semibold text-center"
+            onClick={handleCLickEmpresa}
           >
             Solicitar Crédito
             <FiArrowUpRight className="text-[1.375rem]" />
@@ -194,7 +214,7 @@ export default function SimuladorPyme() {
 
         <div>
           <Image
-            src="/simul.svg"
+            src="https://res.cloudinary.com/dauhuy8u6/image/upload/f_auto,q_auto/v1749930501/simul_x5ownl.svg"
             alt="logo"
             width="500"
             height="500"

@@ -22,7 +22,7 @@ export default function PageInicioSesion() {
     setLoading(true);
     try {
       const response = await fetch(
-        `${process.env.NEXT_PUBLIC_API_URL}/api/auth/login`,
+        `${process.env.NEXT_PUBLIC_API_LOCAL}/api/auth/login`,
         {
           method: "POST",
           headers: {
@@ -71,7 +71,7 @@ export default function PageInicioSesion() {
   return (
     <div className="shadow-md px-5 py-10 rounded-md w-full max-w-[35rem] lg:w-[25rem] -mt-45 md:-mt-90 lg:-mt-0 bg-white">
       <Image
-        src="/logo-financiera-h.png"
+        src="https://res.cloudinary.com/dauhuy8u6/image/upload/f_auto,q_auto/v1749930497/logo-financiera-h_xsxg1a.png"
         alt="logo si te presto"
         width="105"
         height="105"

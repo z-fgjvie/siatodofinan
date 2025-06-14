@@ -20,7 +20,7 @@ export default function Beneficios() {
 
         <div className="grid md:grid-cols-2 gap-7 md:gap-16 items-center">
           <Image
-            src="/beneficios-imagen.jpg"
+            src="https://res.cloudinary.com/dauhuy8u6/image/upload/f_auto,q_auto/v1749930489/beneficios-imagen_foqnav.jpg"
             alt="imagen de beneficios"
             width="500"
             height="500"

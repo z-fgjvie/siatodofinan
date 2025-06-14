@@ -26,7 +26,7 @@ export default function PageRegistroEmpresa() {
         tipoCliente: "empresa",
       };
       const response = await fetch(
-        `${process.env.NEXT_PUBLIC_API_URL}/api/auth/registro`,
+        `${process.env.NEXT_PUBLIC_API_LOCAL}/api/auth/registro`,
         {
           method: "POST",
           headers: {
@@ -60,13 +60,15 @@ export default function PageRegistroEmpresa() {
   return (
     <div className="shadow-md px-5 py-10 rounded-md w-full max-w-[40rem] lg:w-[38rem] -mt-45 md:-mt-90 lg:-mt-0  bg-white ">
       <Image
-        src="/logo-financiera-h.png"
+        src="https://res.cloudinary.com/dauhuy8u6/image/upload/f_auto,q_auto/v1749930497/logo-financiera-h_xsxg1a.png"
         alt="logo si te presto"
         width="105"
         height="105"
         className="mx-auto mb-5 lg:mb-6"
       />
-      <h2 className="text-center text-2xl poppins-semibold mb-7">Empresa</h2>
+      <h2 className="text-center text-2xl poppins-semibold mb-7">
+        Registro Pyme
+      </h2>
 
       <form onSubmit={handleSubmit(handleEnvioEmpresa)}>
         <div className="grid md:grid-cols-2 md:gap-x-5">
@@ -114,8 +116,7 @@ export default function PageRegistroEmpresa() {
               name="rfcEmpresa"
               id="rfcEmpresa"
               autoComplete="off"
-              maxLength={12}
-              {...register("rfcEmpresa", { required: true, minLength: 12 })}
+              {...register("rfcEmpresa", { required: true })}
               className="w-full outline-1 outline-gray-300 px-3 py-[0.625rem] rounded-md text-sm"
             />
           </div>

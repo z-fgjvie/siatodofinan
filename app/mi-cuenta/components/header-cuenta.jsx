@@ -23,7 +23,7 @@ export default function HeaderCuenta() {
   const cerrarSesion = async () => {
     try {
       const response = await fetch(
-        `${process.env.NEXT_PUBLIC_API_URL}/api/auth/cerrar`,
+        `${process.env.NEXT_PUBLIC_API_LOCAL}/api/auth/cerrar`,
         {
           method: "POST",
         }
@@ -41,11 +41,11 @@ export default function HeaderCuenta() {
   };
 
   return (
-    <header className="px-5 py-4 md:pt-4 md:pb-0 bg-[#ebf5f6]">
+    <header className="px-5 py-4  bg-[#ebf5f6]">
       <div className="max-w-[75rem] mx-auto flex items-center justify-between">
         <div>
           <Image
-            src="/logo-financiera-h.png"
+            src="https://res.cloudinary.com/dauhuy8u6/image/upload/f_auto,q_auto/v1749930497/logo-financiera-h_xsxg1a.png"
             alt="logo si te presto"
             width="100"
             height="100"

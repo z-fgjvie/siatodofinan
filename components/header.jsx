@@ -13,7 +13,7 @@ export default function Header() {
       <div className="max-w-[75rem] mx-auto flex items-center justify-between">
         <div>
           <Image
-            src="/logo-financiera-h.png"
+            src="https://res.cloudinary.com/dauhuy8u6/image/upload/f_auto,q_auto/v1749930497/logo-financiera-h_xsxg1a.png"
             alt="logo si te presto"
             width="120"
             height="120"

@@ -17,14 +17,14 @@ export default function Hero() {
           </p>
         </div>
         <Image
-          src="/medal.png"
+          src="https://res.cloudinary.com/dauhuy8u6/image/upload/f_auto,q_auto/v1749930498/medal_eygycg.png"
           alt="imagen de una medalla"
           width="42"
           height="42"
           className="absolute top-45 left-74 hidden lg:flex"
         />
         <Image
-          src="/imagen-hero.jpg"
+          src="https://res.cloudinary.com/dauhuy8u6/image/upload/f_auto,q_auto/v1749930495/imagen-hero_vuezgs.jpg"
           alt="imagen hero"
           width="500"
           height="500"

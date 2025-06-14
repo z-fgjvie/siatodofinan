@@ -16,7 +16,7 @@ export default function QuienesSomos() {
         <div className="grid lg:grid-cols-2 gap-5 lg:gap-3 items-center">
           <div>
             <Image
-              src="/somos.png"
+              src="https://res.cloudinary.com/dauhuy8u6/image/upload/f_auto,q_auto/v1749930502/somos_vo0j4f.png"
               alt="imagen quienes somos"
               width="400"
               height="400"

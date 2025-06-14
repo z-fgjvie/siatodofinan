@@ -109,11 +109,11 @@ export default function MainPyme() {
             <h3 className="text-lg underline manrope-semibold mb-3">Costo:</h3>
             <div className="grid grid-cols-[auto_1fr] items-center gap-3 mb-3">
               <FaCheckCircle className="text-[#09ce89]" />
-              <p>De $1M a $50M MXN: $6,500 + IVA</p>
+              <p>De $1M a $50M MXN: $15,999 + IVA</p>
             </div>
             <div className="grid grid-cols-[auto_1fr] items-center gap-3 mb-3">
               <FaCheckCircle className="text-[#09ce89]" />
-              <p>De $50M a $200M MXN: $9,000 + IVA</p>
+              <p>De $50M a $200M MXN: $26,599 + IVA</p>
             </div>
           </div>
           <div className="grid grid-cols-[auto_1fr] mt-7 gap-2">

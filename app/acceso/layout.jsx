@@ -8,7 +8,7 @@ export default function RootLayout({ children }) {
         <div className="grid lg:grid-cols-2 lg:h-screen">
           <div className="lg:min-h-screen">
             <Image
-              src="/sidebar.jpg"
+              src="https://res.cloudinary.com/dauhuy8u6/image/upload/f_auto,q_auto/v1749930501/sidebar_dqvokg.jpg"
               alt="logo"
               width="500"
               height="500"
@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
           <div className="max-w-[75rem] mx-auto flex justify-between items-center flex-col md:flex-row gap-5">
             <div className="flex gap-6 sm:gap-12 sm:items-center sm:flex-row flex-col mb-5 md:mb-0">
               <Image
-                src="/icon-financiera.png"
+                src="https://res.cloudinary.com/dauhuy8u6/image/upload/f_auto,q_auto/v1749930497/logo-financiera-h_xsxg1a.png"
                 alt="logo"
                 width="50"
                 height="50"

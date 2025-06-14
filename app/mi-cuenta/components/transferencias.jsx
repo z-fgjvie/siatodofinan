@@ -1,5 +1,5 @@
 "use client";
-import { dataTransferencias } from "@/app/api/dataTransferencias";
+import { dataTransferencias } from "@/app/api/dataGarantias";
 import { formatearDinero } from "@/lib/formatearDinero";
 import React from "react";
 import { TbRepeat } from "react-icons/tb";

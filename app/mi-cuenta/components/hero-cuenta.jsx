@@ -31,7 +31,7 @@ export default function HeroCuenta({ tipo, bienvenida }) {
           </p>
         </div>
         <Image
-          src="/hero-cuenta.png"
+          src="https://res.cloudinary.com/dauhuy8u6/image/upload/f_auto,q_auto/v1749930495/hero-cuenta_hdxbvx.png"
           alt="hero"
           width="300"
           height="300"
