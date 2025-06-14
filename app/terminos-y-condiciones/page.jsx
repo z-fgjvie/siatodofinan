@@ -2,7 +2,7 @@ import React from "react";
 import Header from "@/components/header";
 import HeroTerminos from "./components/hero-terminos";
 import MainTerminos from "./components/main-terminos";
-import Footer from "@/components/footer";
+import FooterApp from "@/components/footerApp";
 
 export default function TerminosyCondiciones() {
   return (
@@ -10,7 +10,7 @@ export default function TerminosyCondiciones() {
       <Header />
       <HeroTerminos />
       <MainTerminos />
-      <Footer />
+      <FooterApp />
     </>
   );
 }
