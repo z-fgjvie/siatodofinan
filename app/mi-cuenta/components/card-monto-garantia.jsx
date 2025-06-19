@@ -15,6 +15,11 @@ export default function CardMontoGarantia({ monto, tipo }) {
 
   useEffect(() => {
     const mostrarMontoCredito = async () => {
+      if (typeof window === "undefined") return;
+
+      const token = localStorage.getItem("token");
+      if (!token) return;
+
       const user = await getUser();
       setMontoCredito(user.saldoPrestamo);
     };

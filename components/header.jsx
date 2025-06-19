@@ -25,7 +25,7 @@ export default function Header() {
         <div className="flex items-center gap-3 ">
           <Link
             href="/acceso/iniciar-sesion"
-            className="bg-[#09ce89] text-white  manrope-medium  text-[0.9375rem]  px-5 py-2 rounded-lg hidden sm:flex"
+            className="bg-[#09ce89] text-white  manrope-medium  text-[0.9375rem]  px-5 py-2 rounded-lg "
           >
             Iniciar sesión
           </Link>

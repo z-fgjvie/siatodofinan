@@ -1,5 +1,6 @@
 "use client";
 import { getUsuarios } from "@/app/api/getUsuarios";
+import Link from "next/link";
 import React, { useState } from "react";
 
 export default function TablaAsignarMonto() {
@@ -50,6 +51,12 @@ export default function TablaAsignarMonto() {
 
   return (
     <div className="p-4">
+      <Link
+        href="/dashboard/aprobar"
+        className="mb-4 bg-[#09ce89] p-3 text-white rounded-md block w-fit mx-auto text-center"
+      >
+        Ir a aprobar prestamo
+      </Link>
       <h2 className="text-xl font-semibold mb-4 text-center">
         Asignar Garantías
       </h2>
@@ -60,8 +67,8 @@ export default function TablaAsignarMonto() {
             <th className="border p-2">Nombre</th>
             <th className="border p-2">Tipo Cliente</th>
             <th className="border p-2">Telefono</th>
-            <th className="border p-2">Saldo de Prestamo</th>
             <th className="border p-2">Monto Actual</th>
+            <th className="border p-2">Saldo de Prestamo</th>
             <th className="border p-2">Nuevo Monto</th>
             <th className="border p-2">Acción</th>
           </tr>

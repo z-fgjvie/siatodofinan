@@ -10,9 +10,11 @@ import {
 } from "react-icons/fa";
 
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
-export default function InfoConfirmacion() {
+export default function InfoConfirmacion({ direccion }) {
   const [folio, setFolio] = useState("");
+  const router = useRouter();
 
   const generarFolio = () => {
     const letras = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -102,7 +104,7 @@ export default function InfoConfirmacion() {
           </p>
 
           <Link
-            href="/mi-cuenta/empresa"
+            href={direccion}
             className="inline-flex items-center gap-2 px-6 py-3 bg-[#09ce89] text-white rounded-full text-sm font-semibold shadow-md hover:bg-[#07b87a] transition"
           >
             Ir a mi cuenta <FaArrowRight />

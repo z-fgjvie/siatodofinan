@@ -7,7 +7,7 @@ export default function PagePagoEstudioPersonal() {
   return (
     <>
       <HeaderCuenta />
-      <InfoConfirmacion />
+      <InfoConfirmacion direccion="/mi-cuenta/personal" />
       <Footer />
     </>
   );
