@@ -48,17 +48,17 @@ const poppinsBold = localFont({
 export const metadata = {
   title: "Sí a Todo | Créditos rápidos y garantizados",
   description:
-    "En Sí a Todo te ayudamos a cumplir tus metas con créditos accesibles, rápidos y respaldados. Tu futuro financiero empieza aquí.",
+    "En Sí te Presto te ayudamos a cumplir tus metas con créditos accesibles, rápidos y respaldados. Tu futuro financiero empieza aquí.",
   icons: {
     icon: ["/favicon.ico?v=4"],
     apple: ["/apple-touch-icon.png?=4"],
   },
   openGraph: {
-    title: "Sí a Todo | Créditos rápidos y garantizados",
+    title: "Sí te Presto | Créditos rápidos y garantizados",
     description:
-      "En Sí a Todo te ayudamos a cumplir tus metas con créditos accesibles, rápidos y respaldados. Tu futuro financiero empieza aquí.",
+      "En Sí te Presto te ayudamos a cumplir tus metas con créditos accesibles, rápidos y respaldados. Tu futuro financiero empieza aquí.",
     url: "https://financiera-six.vercel.app",
-    siteName: "Sí a Todo",
+    siteName: "Sí te Presto",
     images: [
       {
         url: "https://financiera-six.vercel.app/og-siatodo.png",

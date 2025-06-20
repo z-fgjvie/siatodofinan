@@ -9,7 +9,7 @@ export default function Header() {
   const router = useRouter();
 
   return (
-    <header className="px-5 py-4  bg-[#ebf5f6] sm:sticky top-0 z-20">
+    <header className="px-5 py-4  bg-[#ebf5f6] sticky top-0 z-20">
       <div className="max-w-[75rem] mx-auto flex items-center justify-between">
         <div>
           <Image
