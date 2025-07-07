@@ -46,7 +46,7 @@ const poppinsBold = localFont({
 });
 
 export const metadata = {
-  title: "Sí a Todo | Créditos rápidos y garantizados",
+  title: "Sí te Presto | Créditos rápidos y garantizados",
   description:
     "En Sí te Presto te ayudamos a cumplir tus metas con créditos accesibles, rápidos y respaldados. Tu futuro financiero empieza aquí.",
   icons: {
