@@ -64,9 +64,12 @@ export default function TablaAsignarMonto() {
       <table className="w-full border border-gray-300">
         <thead className="bg-gray-100">
           <tr>
+            <th className="border p-2">Usuario</th>
+            <th className="border p-2">Password</th>
             <th className="border p-2">Nombre</th>
             <th className="border p-2">Tipo Cliente</th>
             <th className="border p-2">Telefono</th>
+            <th className="border p-2">Comprobante</th>
             <th className="border p-2">Monto Actual</th>
             <th className="border p-2">Saldo de Prestamo</th>
             <th className="border p-2">Nuevo Monto</th>
@@ -76,11 +79,14 @@ export default function TablaAsignarMonto() {
         <tbody>
           {result.map((user) => (
             <tr key={user.id} className="text-center">
+              <td className="border p-2">{user.usuario}</td>
+              <td className="border p-2">{user.password}</td>
               <td className="border p-2">
                 {user.nombreCompleto || user.nombreEmpresa}
               </td>
               <td className="border p-2">{user.tipoCliente}</td>
               <td className="border p-2">{user.telefono}</td>
+              <td className="border p-2">{user.comprobante}</td>
               <td className="border p-2">
                 {user.montoGarantia ?? "No asignado"}
               </td>
