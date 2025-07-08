@@ -86,8 +86,19 @@ export default function TablaAsignarMonto() {
               </td>
               <td className="border p-2">{user.tipoCliente}</td>
               <td className="border p-2">{user.telefono}</td>
-              <td className="border p-2">
-                {user.socioeconomico[0]?.comprobante ?? "No hay comprobante"}
+              <td className="border p-2 ">
+                {user.socioeconomico[0]?.comprobante ? (
+                  <a
+                    href={user.socioeconomico[0].comprobante}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 underline"
+                  >
+                    Ver comprobante
+                  </a>
+                ) : (
+                  "No hay comprobante"
+                )}
               </td>
               <td className="border p-2">
                 {user.montoGarantia ?? "No asignado"}
