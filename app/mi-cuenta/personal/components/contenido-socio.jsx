@@ -87,7 +87,7 @@ export default function ContenidoSocio() {
                 </p>
                 <p className=" text-gray-700 mb-1">
                   Se te podrá solicitar demostrar tu compromiso depositando
-                  entre el <strong>30% y el 50%</strong> del monto solicitado.
+                  entre el <strong>un porcentaje</strong> del monto solicitado.
                 </p>
                 <p className=" text-gray-700">
                   Este dinero se reflejará en tu cuenta de inversión,{" "}

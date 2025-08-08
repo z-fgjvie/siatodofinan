@@ -177,7 +177,21 @@ export default function FormularioPersonal() {
               {...register("referenciaUno", {
                 required: true,
               })}
+              className="w-full outline-1 outline-gray-300 px-3 py-[0.625rem] rounded-md text-sm mb-5"
+              placeholder="Nombre Completo"
+            />
+            <input
+              type="text"
+              name="referenciaUnoD"
+              id="referenciaUnoD"
+              autoComplete="off"
+              maxLength={10}
+              {...register("referenciaUnoD", {
+                required: true,
+                minLength: 10,
+              })}
               className="w-full outline-1 outline-gray-300 px-3 py-[0.625rem] rounded-md text-sm"
+              placeholder="Numero de Telefono"
             />
           </div>
           <div className="mb-7">
@@ -195,7 +209,21 @@ export default function FormularioPersonal() {
               {...register("referenciaDos", {
                 required: true,
               })}
+              className="w-full outline-1 outline-gray-300 px-3 py-[0.625rem] rounded-md text-sm mb-5"
+              placeholder="Nombre Completo"
+            />
+            <input
+              type="text"
+              name="referenciaDosD"
+              id="referenciaDosD"
+              autoComplete="off"
+              maxLength={10}
+              {...register("referenciaDosD", {
+                required: true,
+                minLength: 10,
+              })}
               className="w-full outline-1 outline-gray-300 px-3 py-[0.625rem] rounded-md text-sm"
+              placeholder="Numero de Telefono"
             />
           </div>
           <div className="mb-7">
@@ -360,7 +388,7 @@ export default function FormularioPersonal() {
               con fines de evaluación financiera.
             </label>
           </div>
-          <div className="mb-4 grid grid-cols-[auto_1fr]">
+          {/* <div className="mb-4 grid grid-cols-[auto_1fr]">
             <input
               type="checkbox"
               name="fondo"
@@ -380,8 +408,8 @@ export default function FormularioPersonal() {
               </span>{" "}
               del 30% al 50%
             </label>
-          </div>
-          <div className="mb-4 grid grid-cols-[auto_1fr]">
+          </div> */}
+          {/* <div className="mb-4 grid grid-cols-[auto_1fr]">
             <input
               type="checkbox"
               name="estudiosoci"
@@ -404,7 +432,7 @@ export default function FormularioPersonal() {
               </span>{" "}
               de $1,200
             </label>
-          </div>
+          </div> */}
           <div className="mb-7 grid grid-cols-[auto_1fr]">
             <input
               type="checkbox"

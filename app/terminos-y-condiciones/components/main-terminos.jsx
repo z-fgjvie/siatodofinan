@@ -67,7 +67,7 @@ export default function MainTerminos() {
           </li>
           <li>
             El solicitante deberá proporcionar su RFC y su Constancia de
-            Situación Fiscal emitida por el SAT.
+            Situación Fiscal emitida por el SAT únicamente persona moral.
           </li>
           <li>
             El solicitante se obliga a dejar una garantía económica inicial
@@ -79,6 +79,117 @@ export default function MainTerminos() {
             correo electrónico o llamadas telefónicas.
           </li>
         </ol>
+
+        <div className="border-t my-4 pt-4 space-y-6 text-justify">
+          <h2 className="text-lg font-semibold">
+            ¿Qué es el Estudio Socioeconómico de Sí Te Presto?
+          </h2>
+          <p>
+            El estudio socioeconómico es un paso fundamental dentro del proceso
+            de solicitud de crédito en{" "}
+            <strong className="text-[#09ce89]">Sí Te Presto</strong>,
+            especialmente diseñado para personas que:
+          </p>
+          <ul className="list-disc pl-5 space-y-1">
+            <li>Tienen mal historial crediticio</li>
+            <li>No cuentan con historial en buró</li>
+            <li>O simplemente quieren demostrar capacidad de pago real</li>
+          </ul>
+          <p>
+            Este estudio <strong className="text-[#09ce89]">NO</strong> es un
+            gasto innecesario, sino una herramienta que permite que podamos
+            evaluarte de manera justa, más allá de lo que diga el buró de
+            crédito.
+          </p>
+
+          <h2 className="text-lg font-semibold">¿Para qué sirve?</h2>
+          <ul className="list-disc pl-5 space-y-1">
+            <li>
+              <strong>Evalúa tu capacidad de pago actual:</strong> No nos
+              enfocamos solo en el pasado financiero, sino en tu situación real
+              y presente.
+            </li>
+            <li>
+              <strong>Mide tu nivel de riesgo financiero:</strong> Con base en
+              ingresos, gastos, entorno y actividad económica.
+            </li>
+            <li>
+              <strong>Ofrece un crédito con respaldo adecuado:</strong> Así
+              definimos si necesitas o no una garantía, y de cuánto sería.
+            </li>
+            <li>
+              <strong>Abre la puerta a una segunda oportunidad:</strong> Es la
+              alternativa cuando otros te han dicho “NO”.
+            </li>
+          </ul>
+
+          <h2 className="text-lg font-semibold">¿Qué incluye?</h2>
+          <p>
+            El estudio contempla la recolección y análisis de la siguiente
+            información:
+          </p>
+          <ul className="list-disc pl-5 space-y-1">
+            <li>Identificación y validación de datos personales</li>
+            <li>Actividad económica o laboral actual</li>
+            <li>Ingresos y egresos mensuales</li>
+            <li>Domicilio y condiciones de vivienda</li>
+            <li>Personas dependientes económicamente</li>
+            <li>
+              Tipo de negocio (en caso de PyME o trabajador independiente)
+            </li>
+            <li>Análisis de entorno familiar y hábitos financieros</li>
+            <li>
+              Situación patrimonial básica (bienes, herramientas, vehículos)
+            </li>
+            <li>Validación visual o documental de la información</li>
+          </ul>
+          <p className="italic text-sm">
+            En algunos casos se puede requerir entrevista telefónica,
+            videollamada o visita virtual para validar ciertos datos.
+          </p>
+
+          <h2 className="text-lg font-semibold">¿Cuánto cuesta?</h2>
+          <ul className="list-disc pl-5 space-y-1">
+            <li>
+              <strong>$1,200 MXN</strong> para personas físicas o trabajadores
+              independientes
+            </li>
+            <li>
+              <strong>Desde $8,500 MXN</strong> para PyMES y empresas
+              (evaluación más extensa y técnica)
+            </li>
+          </ul>
+          <p>
+            Este monto{" "}
+            <strong className="text-[#09ce89]">no es reembolsable</strong>, ya
+            que cubre los costos operativos, validaciones, análisis de riesgo y
+            elaboración del dictamen.
+          </p>
+
+          <h2 className="text-lg font-semibold">¿Qué pasa después?</h2>
+          <ol className="list-decimal pl-5 space-y-1">
+            <li>El estudio es evaluado por el área de análisis.</li>
+            <li>
+              En menos de 72 horas hábiles recibirás una respuesta
+              personalizada:
+              <ul className="list-disc pl-5 mt-1 space-y-1">
+                <li>Si calificas para crédito sin garantía</li>
+                <li>O si necesitas presentar una garantía en inversión</li>
+              </ul>
+            </li>
+            <li>
+              Si aceptas las condiciones, se procede al contrato y al
+              desembolso.
+            </li>
+          </ol>
+
+          <h2 className="text-lg font-semibold">Tu información está segura</h2>
+          <p>
+            Todos los datos recopilados se manejan con absoluta
+            confidencialidad, bajo aviso de privacidad y con protocolos legales.
+            Tu confianza es lo más importante para nosotros.
+          </p>
+        </div>
 
         <div className="border-t my-4 pt-4">
           <h2 className="text-lg font-semibold">Declaración de Conformidad</h2>

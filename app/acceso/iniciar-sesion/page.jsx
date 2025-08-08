@@ -1,6 +1,8 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import { IoMdEyeOff } from "react-icons/io";
+import { IoMdEye } from "react-icons/io";
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
@@ -8,6 +10,7 @@ import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import { toast } from "sonner";
 
 export default function PageInicioSesion() {
+  const [mostrarPassword, setMostrarPassword] = useState(false);
   const {
     register,
     handleSubmit,
@@ -16,6 +19,10 @@ export default function PageInicioSesion() {
   } = useForm();
   const [loading, setLoading] = useState(false);
   const router = useRouter();
+
+  const handleMostrarPassword = () => {
+    setMostrarPassword(!mostrarPassword);
+  };
 
   const handleLogin = async (data) => {
     if (!isValid) return;
@@ -101,7 +108,7 @@ export default function PageInicioSesion() {
           />
         </div>
 
-        <div className="mb-8">
+        <div className="mb-8 relative">
           <label
             htmlFor="password"
             className="text-[0.93rem] text-gray-600 mb-2 block"
@@ -109,7 +116,7 @@ export default function PageInicioSesion() {
             Contraseña
           </label>
           <input
-            type="password"
+            type={mostrarPassword ? "text" : "password"}
             name="password"
             id="password"
             autoComplete="off"
@@ -118,6 +125,17 @@ export default function PageInicioSesion() {
             })}
             className="w-full outline-1 outline-gray-300 px-3 py-[0.625rem] rounded-md text-sm"
           />
+          {mostrarPassword ? (
+            <IoMdEye
+              className="text-[#707070] text-2xl absolute top-[2.4rem] right-5  cursor-pointer "
+              onClick={handleMostrarPassword}
+            />
+          ) : (
+            <IoMdEyeOff
+              className="text-[#707070] text-2xl absolute top-[2.4rem] right-5 cursor-pointer "
+              onClick={handleMostrarPassword}
+            />
+          )}
         </div>
 
         <button

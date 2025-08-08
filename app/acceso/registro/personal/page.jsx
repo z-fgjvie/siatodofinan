@@ -1,21 +1,31 @@
 "use client";
+import ErrorForm from "@/components/error-form";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
+import { IoMdEyeOff } from "react-icons/io";
+import { IoMdEye } from "react-icons/io";
 import { toast } from "sonner";
 
 export default function PageRegistroPersonal() {
+  const [mostrarPassword, setMostrarPassword] = useState(false);
   const {
     handleSubmit,
     register,
     reset,
-    formState: { isValid },
-  } = useForm();
+    formState: { errors, isValid },
+  } = useForm({
+    mode: "onChange",
+  });
   const [loading, setLoading] = useState(false);
   const router = useRouter();
+
+  const handleMostrarPassword = () => {
+    setMostrarPassword(!mostrarPassword);
+  };
 
   const handleEnviar = async (data) => {
     if (!isValid) return;
@@ -33,6 +43,8 @@ export default function PageRegistroPersonal() {
       );
 
       const respuesta = await response.json();
+
+      console.log("URL DE LA API:", process.env.NEXT_PUBLIC_API_URL);
 
       if (!response.ok) {
         toast("Error al registrarse", {
@@ -147,7 +159,7 @@ export default function PageRegistroPersonal() {
           />
         </div>
 
-        <div className="mb-7">
+        <div className="mb-7 relative">
           <label
             htmlFor="password"
             className="text-[0.93rem] text-gray-600 mb-2 block"
@@ -155,16 +167,37 @@ export default function PageRegistroPersonal() {
             Contraseña
           </label>
           <input
-            type="password"
+            type={mostrarPassword ? "text" : "password"}
             name="password"
             id="password"
             autoComplete="off"
             {...register("password", {
               required: true,
-              minLength: 6,
+              minLength: {
+                value: 6,
+                message: "Debe tener al menos 6 caracteres",
+              },
+              pattern: {
+                value: /^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*(),.?":{}|<>]).+$/,
+                message:
+                  "Debe contener una mayúscula, un número y un carácter especial",
+              },
             })}
             className="w-full outline-1 outline-gray-300 px-3 py-[0.625rem] rounded-md text-sm"
           />
+          {mostrarPassword ? (
+            <IoMdEye
+              className="text-[#707070] text-2xl absolute top-[2.4rem] right-5  cursor-pointer "
+              onClick={handleMostrarPassword}
+            />
+          ) : (
+            <IoMdEyeOff
+              className="text-[#707070] text-2xl absolute top-[2.4rem] right-5 cursor-pointer "
+              onClick={handleMostrarPassword}
+            />
+          )}
+
+          {errors.password && <ErrorForm>{errors.password?.message}</ErrorForm>}
         </div>
 
         <button
