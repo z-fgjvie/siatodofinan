@@ -99,8 +99,8 @@ export default function ContenidoEmpresa() {
                 </p>
                 <p className="text-gray-700 mb-1">
                   Dependiendo del análisis de riesgo, se podría requerir
-                  demostrar capacidad de pago con un depósito entre el{" "}
-                  <strong>30% y 50%</strong> del monto solicitado.
+                  demostrar capacidad de pago con un depósito en garantía que
+                  depe de del monto solicitado.
                 </p>
                 <p className="text-gray-700">
                   Este capital se deposita en una cuenta de inversión

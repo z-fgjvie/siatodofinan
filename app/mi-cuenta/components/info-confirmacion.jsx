@@ -87,7 +87,7 @@ export default function InfoConfirmacion({ direccion }) {
               </li>
               <li className="grid grid-cols-[auto_1fr] sm:items-center gap-2">
                 <FaShieldAlt className="text-blue-500 mt-1 sm:mt-0" /> Califica
-                con garantía económica (30%–50%)
+                con garantía económica dependiendo del perfil y riesgo
               </li>
               <li className="grid grid-cols-[auto_1fr] sm:items-center gap-2">
                 <FaTimesCircle className="text-red-500 mt-1 sm:mt-0" /> No

@@ -79,8 +79,8 @@ export default function Confianza() {
               <p className="text-white text-justify">
                 En Sí Te Presto, entendemos que cada persona es diferente. Por
                 eso, en algunos casos será necesario dejar una garantía o
-                demostrar capacidad de pago, que puede ir del 30% hasta el 50%
-                del monto solicitado, dependiendo del perfil y riesgo valorado.
+                demostrar capacidad de pago dependiendo del caso y del monto
+                solicitado, dependiendo del perfil y riesgo valorado.
               </p>
             </div>
             <div className="grid md:grid-cols-3 gap-5">
