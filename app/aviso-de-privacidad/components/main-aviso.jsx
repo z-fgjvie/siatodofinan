@@ -14,8 +14,8 @@ export default function MainAviso() {
       </Link>
       <p className="mb-6">
         <strong className="text-[#09ce89]">SÍ TE PRESTO</strong>, marca
-        comercial representada legalmente por Samantha Yuniel Barrios Degante,
-        con domicilio para efectos del presente aviso en Ciudad de México, es
+        comercial representada legalmente por Edgar G. Martínez Copado, con
+        domicilio para efectos del presente aviso en Ciudad de México, es
         responsable del tratamiento de sus datos personales conforme a lo
         dispuesto en la Ley Federal de Protección de Datos Personales en
         Posesión de los Particulares.

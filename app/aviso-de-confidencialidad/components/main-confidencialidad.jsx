@@ -23,7 +23,7 @@ export default function MainConfidencialidad() {
 
       <p>
         <strong className="text-[#09ce89]">SÍ TE PRESTO</strong>, representada
-        legalmente por Samantha Yuniel Barrios Degante, informa que toda la
+        legalmente por Edgar G. Martínez Copado, informa que toda la
         información, documentación, datos financieros, patrimoniales, personales
         o empresariales que se generen, transmitan o compartan en el marco de la
         relación con el usuario o cliente, serán considerados como

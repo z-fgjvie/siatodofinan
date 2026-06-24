@@ -39,14 +39,13 @@ export default function MainTerminos() {
             oficial autorizada:
             <ul className="list-disc pl-5 mt-2">
               <li className="mb-1">
-                <strong>Banco:</strong> Banamex
+                <strong>Banco:</strong> Banorte
               </li>
               <li className="mb-1">
-                <strong>Clave:</strong> 002540702027247851
+                <strong>Clave:</strong> 072540013076149564
               </li>
               <li>
-                <strong>Representante Legal:</strong> Samantha Yuniel Barrios
-                Degante
+                <strong>Representante Legal:</strong> Edgar G. Martínez Copado
               </li>
             </ul>
           </li>
