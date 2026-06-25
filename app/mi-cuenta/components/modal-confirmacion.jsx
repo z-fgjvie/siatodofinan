@@ -57,7 +57,7 @@ export default function ModalConfirmacion({
             Authorization: `Bearer ${token}`,
           },
           body: formData,
-        }
+        },
       );
 
       const user = await getUser();
@@ -132,14 +132,13 @@ export default function ModalConfirmacion({
             </div>
             <div className="bg-gray-100 p-4 rounded-lg text-sm text-gray-800 space-y-1">
               <p>
-                <strong>Cuenta:</strong> 002540702027247851
+                <strong>Cuenta:</strong> 072540013076149564
               </p>
               <p>
-                <strong>Banco:</strong> BANAMEX
+                <strong>Banco:</strong> BANORTE
               </p>
               <p>
-                <strong>Representante legal:</strong> Samantha Yuniel Barrios
-                Degante
+                <strong>Representante legal:</strong> Edgar G. Martínez Copado
               </p>
             </div>
           </div>

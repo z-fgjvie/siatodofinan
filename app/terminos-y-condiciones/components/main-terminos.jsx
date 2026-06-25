@@ -31,8 +31,7 @@ export default function MainTerminos() {
           <li>
             Por motivos de seguridad, control y transparencia, la única persona
             autorizada para recibir depósitos o transferencias es la apoderada
-            legal de la financiera,{" "}
-            <strong>Samantha Yuniel Barrios Degante</strong>.
+            legal de la financiera, <strong>Edgar G. Martínez Copado</strong>.
           </li>
           <li>
             Todos los pagos deberán realizarse a la siguiente cuenta bancaria
@@ -45,7 +44,7 @@ export default function MainTerminos() {
                 <strong>Clave:</strong> 072540013076149564
               </li>
               <li>
-                <strong>Representante Legal:</strong> Edgar G. Martínez Copado
+                <strong>Representante Legal: Edgar G. Martínez Copado </strong>
               </li>
             </ul>
           </li>
