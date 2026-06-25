@@ -73,7 +73,7 @@ export default function CardMontoGarantia({ monto, tipo }) {
                   Cuenta bancaria para el depósito
                 </p>
                 <p className="text-lg font-bold text-[#283b42]">
-                  BANAMEX - 002540702027247851
+                  BANORTE - 072540013076149564
                 </p>
               </div>
             </div>
