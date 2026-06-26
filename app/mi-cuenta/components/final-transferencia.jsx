@@ -26,8 +26,8 @@ export default function FinalTransferencia() {
       {/* Mensaje informativo */}
       <p className="grid grid-cols-[auto_1fr]  gap-1 text-xs text-gray-600 max-w-md mx-auto">
         <BiInfoCircle className="mt-[2px] text-lg text-[#09ce89]" />
-        La transferencia depende muchas veces de tu banco emisor en lo que
-        procesa la solicitud.
+        Las transferencia depende mucho de Banxico y el banco receptor en lo qué
+        se procesa la solicitud. De 24 a 72 hora hábiles.
       </p>
     </div>
   );
