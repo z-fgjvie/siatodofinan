@@ -109,9 +109,11 @@ export default function FinalCredito({ tipo }) {
           </div>
 
           <p className="text-sm text-gray-700 leading-relaxed">
-            El crédito se deposita en la cuenta registrada del solicitante en un
-            lapso no mayor a{" "}
-            <span className="font-semibold text-[#09ce89]">24 horas</span>.
+            El crédito se verá reflejado en su portal, al igual que su garantía,
+            en un lapso no mayor a{" "}
+            <span className="font-semibold text-[#09ce89]">24 horas</span>{" "}
+            posteriores a que le aparezca este mensaje. <br /> Gracias por su
+            atención.
           </p>
         </div>
       )}
